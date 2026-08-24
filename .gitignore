@@ -1,5 +1,2 @@
 # Supports de cours (non redistribués)
 *.pdf
-
-# Jeu de données source (récupérable via curl, cf. reponses_jour1.md)
-primer-dataset.json
