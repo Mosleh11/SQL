@@ -1,5 +1,5 @@
 // Rapport Jour 1 - collection nyc.restaurants
-// Mohammed Monsleh - MIA4 / IPSSI Montpellier
+// Mohammed Monsleh - MIA4 / IPSSI
 
 const total = db.restaurants.countDocuments({});
 print("=========================================");

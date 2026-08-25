@@ -1,6 +1,6 @@
-# TP MongoDB — Module MIA4 (IPSSI Montpellier)
+# TP MongoDB — Module MIA4 (IPSSI)
 
-Module **MIA4 · Conception et intégration d'un SGBD NoSQL** — IPSSI Montpellier
+Module **MIA4 · Conception et intégration d'un SGBD NoSQL** — IPSSI
 Mohammed Monsleh
 
 Travaux pratiques sur MongoDB, réalisés sur des jeux de données réels dans un

@@ -1,6 +1,6 @@
 """
 Patterns de modelisation appliques a la base mflix.
-Mohammed Monsleh - MIA4 / IPSSI Montpellier
+Mohammed Monsleh - MIA4 / IPSSI
 
 Q16 : reconciliation du Computed Pattern (num_mflix_comments)
 Q17 : correction du compteur en bulk_write

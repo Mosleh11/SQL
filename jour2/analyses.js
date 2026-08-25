@@ -1,5 +1,5 @@
 // Analyses agregees - base mflix
-// Mohammed Monsleh - MIA4 / IPSSI Montpellier
+// Mohammed Monsleh - MIA4 / IPSSI
 // Lancement : docker exec -i mongo-ipssi mongosh -u admin -p ipssi2025 \
 //               --authenticationDatabase admin mflix < analyses.js
 

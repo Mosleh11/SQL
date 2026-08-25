@@ -1,6 +1,6 @@
 # TP Jour 2 — Modélisation, Indexation & Drivers
 
-**Mohammed Monsleh** — MIA4 · Conception et intégration d'un SGBD NoSQL — IPSSI Montpellier
+**Mohammed Monsleh** — MIA4 · Conception et intégration d'un SGBD NoSQL — IPSSI
 Jeu de données : `sample_mflix` — base `mflix`, collections `movies` et `comments`.
 
 ---

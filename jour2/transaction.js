@@ -1,5 +1,5 @@
 // Transaction ACID multi-documents - moderation d'un commentaire
-// Mohammed Monsleh - MIA4 / IPSSI Montpellier
+// Mohammed Monsleh - MIA4 / IPSSI
 //
 // Scenario : on supprime un commentaire ET on decremente num_mflix_comments
 // du film. Les deux operations doivent etre atomiques : soit les deux, soit

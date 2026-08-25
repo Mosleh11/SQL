@@ -1,6 +1,6 @@
 # TP Jour 1 — Introduction au NoSQL & MongoDB
 
-**Mohammed Monsleh** — MIA4 · Conception et intégration d'un SGBD NoSQL — IPSSI Montpellier
+**Mohammed Monsleh** — MIA4 · Conception et intégration d'un SGBD NoSQL — IPSSI
 Jeu de données : `primer-dataset.json` (NYC DOHMH), base `nyc`, collection `restaurants`.
 
 ---
