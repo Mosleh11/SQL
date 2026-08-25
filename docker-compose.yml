@@ -8,6 +8,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: ipssi2025
     ports:
       - "27017:27017"
+      - "27019:27017"   # 27017 est deja pris par un mongod local sur cette machine
     volumes:
       - mongo-data:/data/db
 
