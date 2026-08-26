@@ -1,0 +1,67 @@
+Unable to find image 'python:3.12-slim' locally
+3.12-slim: Pulling from library/python
+48579d87405c: Pulling fs layer
+a0d8783128af: Pulling fs layer
+6310eb16bf42: Pulling fs layer
+b79f58b3eb94: Pulling fs layer
+48579d87405c: Download complete
+b79f58b3eb94: Download complete
+a0d8783128af: Download complete
+206ad1fd7b89: Download complete
+14bd8add42e3: Download complete
+6310eb16bf42: Download complete
+6310eb16bf42: Pull complete
+a0d8783128af: Pull complete
+48579d87405c: Pull complete
+b79f58b3eb94: Pull complete
+Digest: sha256:7a8b475003c4fe15a2cd4e55e5cfc2f3560bdc9333d624f24cdd6d4340fd7a17
+Status: Downloaded newer image for python:3.12-slim
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+# uri=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/?replicaSet=rs0&retryWrites=true
+# duree=45s  writeConcern w=1
+13:02:15.188 | n=  1 | primary=None                   | OK     ( 0.02s) 
+13:02:16.188 | n=  2 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:17.188 | n=  3 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:18.188 | n=  4 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:19.189 | n=  5 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:20.189 | n=  6 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:21.189 | n=  7 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:22.189 | n=  8 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:23.190 | n=  9 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:24.190 | n= 10 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:25.190 | n= 11 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:26.190 | n= 12 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:27.191 | n= 13 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:28.191 | n= 14 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:29.191 | n= 15 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:30.191 | n= 16 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:31.192 | n= 17 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:32.192 | n= 18 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:33.192 | n= 19 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:34.192 | n= 20 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:35.193 | n= 21 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:36.193 | n= 22 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:37.193 | n= 23 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:38.193 | n= 24 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:39.194 | n= 25 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:40.194 | n= 26 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:41.194 | n= 27 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:42.192 | n= 28 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:43.192 | n= 29 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:44.193 | n= 30 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:45.193 | n= 31 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:46.193 | n= 32 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:47.194 | n= 33 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:48.195 | n= 34 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:49.195 | n= 35 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:50.195 | n= 36 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:02:51.195 | n= 37 | primary=None                   | ECHEC  ( 5.04s) ServerSelectionTimeoutError: No primary available for writes, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6a8ee3d77095c19
+13:02:56.233 | n= 38 | primary=None                   | OK     ( 4.79s) 
+----------------------------------------------------------------------------------------------------
+Ecritures reussies (vues par le script) : 37
+Ecritures en echec                      : 1
+count_documents reel dans la collection : 37
+Ecart (reel - reussies)                 : 0

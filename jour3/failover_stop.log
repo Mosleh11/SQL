@@ -1,0 +1,5 @@
+# observation via mongo2 - 75s - une ligne par changement d'etat
+14:56:20.275 [  0.000s] primary = mongo1:27017
+14:56:25.116 [  4.873s] primary = mongo2:27017
+14:56:59.632 [ 39.389s] primary = mongo1:27017
+[ 75.125s] fin d'observation

@@ -1,0 +1,53 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+# uri=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/?replicaSet=rs0&retryWrites=true
+# duree=50s  writeConcern w='majority'  intervalle=1.0s
+13:15:50.157 | n=   1 | primary=None                   | OK     ( 0.05s) 
+13:15:51.157 | n=   2 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:52.157 | n=   3 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:53.158 | n=   4 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:54.158 | n=   5 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:55.158 | n=   6 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:56.158 | n=   7 | primary=('mongo1', 27017)      | OK     ( 0.01s) 
+13:15:57.159 | n=   8 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:58.159 | n=   9 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:15:59.159 | n=  10 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:16:00.159 | n=  11 | primary=('mongo1', 27017)      | OK     ( 0.03s) 
+13:16:01.160 | n=  12 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:02.160 | n=  13 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:03.160 | n=  14 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:04.160 | n=  15 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:05.161 | n=  16 | primary=('mongo1', 27017)      | OK     ( 0.01s) 
+13:16:06.161 | n=  17 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:07.161 | n=  18 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:08.161 | n=  19 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:09.161 | n=  20 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:10.162 | n=  21 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:11.162 | n=  22 | primary=('mongo1', 27017)      | OK     ( 0.03s) 
+13:16:12.159 | n=  23 | primary=('mongo1', 27017)      | OK     ( 0.01s) 
+13:16:13.159 | n=  24 | primary=('mongo1', 27017)      | OK     ( 0.02s) 
+13:16:14.159 | n=  25 | primary=None                   | ECHEC  ( 5.03s) ServerSelectionTimeoutError: No primary available for writes, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6a8ee70676d2972
+13:16:19.190 | n=  26 | primary=None                   | ECHEC  ( 5.04s) ServerSelectionTimeoutError: No primary available for writes, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6a8ee70676d2972
+13:16:24.230 | n=  27 | primary=None                   | OK     ( 0.01s) 
+13:16:25.231 | n=  28 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:26.231 | n=  29 | primary=('mongo3', 27017)      | OK     ( 0.03s) 
+13:16:27.231 | n=  30 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:28.231 | n=  31 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:29.232 | n=  32 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:30.232 | n=  33 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:31.232 | n=  34 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:32.232 | n=  35 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:33.233 | n=  36 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:34.233 | n=  37 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:35.233 | n=  38 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:36.233 | n=  39 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:37.234 | n=  40 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:38.234 | n=  41 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+13:16:39.234 | n=  42 | primary=('mongo3', 27017)      | OK     ( 0.02s) 
+----------------------------------------------------------------------------------------------------
+Ecritures reussies (vues par le script) : 40
+Ecritures en echec                      : 2
+count_documents reel dans la collection : 40
+Ecart (reel - reussies)                 : 0

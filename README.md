@@ -48,6 +48,28 @@ covered query à `totalDocsExamined = 0` · index partiel 9× plus léger.
 
 ---
 
+## Jour 3 — Réplication & haute disponibilité
+
+Recensement US `sample_training/zips` — **29 470 codes postaux**, sur un Replica Set 3 nœuds.
+Élection, oplog, Write/Read Concern, failover chronométré, résilience applicative en PyMongo.
+
+| Fichier | Description |
+|---|---|
+| [`jour3/reponses_jour3.md`](jour3/reponses_jour3.md) | Le rendu : Q1 → Q33, réflexion R1 → R4 |
+| [`jour3/failover.md`](jour3/failover.md) | Mesures de bascule : arrêt propre, panne brutale, retour du nœud |
+| [`jour3/resilience.md`](jour3/resilience.md) | Sortie horodatée de `writer.py` pendant la panne, écritures perdues |
+| [`jour3/docker-compose.rs.yml`](jour3/docker-compose.rs.yml), [`jour3/init-rs.js`](jour3/init-rs.js) | Infra du Replica Set |
+| [`jour3/watch_primary.py`](jour3/watch_primary.py), [`jour3/writer.py`](jour3/writer.py) | Outils de mesure |
+| `jour3/*.log` | Sorties brutes des mesures |
+
+**Quelques résultats** — bascule **0,284 s** en arrêt propre contre **9,696 s** en panne brutale
+(**34×**) · l'application subit **10,8 s**, toujours plus que le cluster · une écriture peut
+exister alors que son write concern a échoué (2 documents là où on en attend 1) · oplog de
+128 Mio = **19 minutes** de fenêtre de réplication seulement · 4 nœuds ne tolèrent pas plus de
+pannes que 3, vérifié.
+
+---
+
 ## Environnement
 
 ```bash

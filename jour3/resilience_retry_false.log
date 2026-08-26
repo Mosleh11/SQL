@@ -1,0 +1,53 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: pip install --upgrade pip
+# uri=mongodb://mongo1:27017,mongo2:27017,mongo3:27017/?replicaSet=rs0&retryWrites=false
+# duree=50s  writeConcern w=1
+13:04:31.358 | n=  1 | primary=None                   | OK     ( 0.01s) 
+13:04:32.359 | n=  2 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:33.359 | n=  3 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:34.359 | n=  4 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:35.360 | n=  5 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:36.360 | n=  6 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:37.360 | n=  7 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:38.360 | n=  8 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:39.361 | n=  9 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:40.361 | n= 10 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:41.361 | n= 11 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:42.360 | n= 12 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:43.360 | n= 13 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:44.360 | n= 14 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:45.361 | n= 15 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:46.361 | n= 16 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:47.361 | n= 17 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:48.361 | n= 18 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:49.362 | n= 19 | primary=('mongo1', 27017)      | OK     ( 0.00s) 
+13:04:50.362 | n= 20 | primary=None                   | ECHEC  ( 5.50s) ServerSelectionTimeoutError: No primary available for writes, Timeout: 5.0s, Topology Description: <TopologyDescription id: 6a8ee45f729dca9
+13:04:55.859 | n= 21 | primary=None                   | OK     ( 4.52s) 
+13:05:00.376 | n= 22 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:01.376 | n= 23 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:02.376 | n= 24 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:03.376 | n= 25 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:04.376 | n= 26 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:05.377 | n= 27 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:06.377 | n= 28 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:07.377 | n= 29 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:08.377 | n= 30 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:09.377 | n= 31 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:10.377 | n= 32 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:11.378 | n= 33 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:12.376 | n= 34 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:13.376 | n= 35 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:14.376 | n= 36 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:15.376 | n= 37 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:16.377 | n= 38 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:17.377 | n= 39 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:18.377 | n= 40 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:19.377 | n= 41 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+13:05:20.377 | n= 42 | primary=('mongo3', 27017)      | OK     ( 0.00s) 
+----------------------------------------------------------------------------------------------------
+Ecritures reussies (vues par le script) : 41
+Ecritures en echec                      : 1
+count_documents reel dans la collection : 78
+Ecart (reel - reussies)                 : 37
