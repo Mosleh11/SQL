@@ -1,0 +1,31 @@
+name: shardlab
+
+services:
+  cfg1:
+    image: mongo:7.0
+    container_name: cfg1
+    command: mongod --configsvr --replSet cfgRS --bind_ip_all --port 27017
+    ports:
+      - "27119:27017"
+
+  shardA:
+    image: mongo:7.0
+    container_name: shardA
+    command: mongod --shardsvr --replSet shardA --bind_ip_all --port 27017
+    ports:
+      - "27120:27017"
+
+  shardB:
+    image: mongo:7.0
+    container_name: shardB
+    command: mongod --shardsvr --replSet shardB --bind_ip_all --port 27017
+    ports:
+      - "27121:27017"
+
+  mongos:
+    image: mongo:7.0
+    container_name: mongos
+    command: mongos --configdb cfgRS/cfg1:27017 --bind_ip_all --port 27017
+    depends_on: [cfg1, shardA, shardB]
+    ports:
+      - "27122:27017"

@@ -1,0 +1,17 @@
+name: j4
+
+services:
+  mongo-j4:
+    image: mongo:7.0
+    container_name: mongo-j4
+    restart: unless-stopped
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: ipssi2025
+    ports:
+      - "27017:27017"
+    volumes:
+      - j4-data:/data/db
+
+volumes:
+  j4-data:

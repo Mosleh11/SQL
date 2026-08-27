@@ -70,6 +70,28 @@ pannes que 3, vérifié.
 
 ---
 
+## Jour 4 — Sharding appliqué, Performances & Diagnostic
+
+Deux missions indépendantes : un **cluster shardé** (`census.zips`, 29 470 codes postaux) où l'on
+prouve par la mesure qu'une mauvaise shard key ruine le cluster, puis **10 000 trajets Citi Bike
+NYC** — agrégation, qualité de données, optimiseur, géospatial, profiler.
+
+| Fichier | Description |
+|---|---|
+| [`jour4/reponses_jour4.md`](jour4/reponses_jour4.md) | Le rendu : Q1 → Q34, réflexion R1 → R4 |
+| [`jour4/bench_shard.md`](jour4/bench_shard.md) | Distributions, frontières de chunks, targeted vs broadcast, tableau de décision |
+| [`jour4/diagnostic.md`](jour4/diagnostic.md) | `explain()` avant/après index, extraits de `system.profile` |
+| [`jour4/pipelines.js`](jour4/pipelines.js), [`jour4/geo.js`](jour4/geo.js) | Pipelines d'agrégation et requêtes géospatiales |
+| [`jour4/docker-compose.shard.yml`](jour4/docker-compose.shard.yml), [`jour4/setup-shard.sh`](jour4/setup-shard.sh) | Infra du cluster shardé |
+
+**Quelques résultats** — `{ state: 1 }` : **76 / 24** et 4 `splitAt` ne déplacent **aucun**
+document (jumbo chunks) · requête broadcast : **968 documents lus par document utile** · clé
+hachée : **49,3 / 50,7** sans intervention, zéro orphelin · **9 242 documents orphelins** qui
+disparaissent seuls au bout de 15 minutes, prédiction vérifiée · **100 %** des Customer ont une
+année de naissance en chaîne · **0,54 %** de trajets aberrants déplacent une moyenne de **34 %**.
+
+---
+
 ## Environnement
 
 ```bash
